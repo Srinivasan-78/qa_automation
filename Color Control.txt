@@ -1,0 +1,422 @@
+#Colorcontrol
+# [TC-CC-1.1] Global attributes with server as DUT
+./chip-tool colorcontrol read cluster-revision 1 1
+./chip-tool colorcontrol read feature-map 1 1
+./chip-tool colorcontrol read attribute-list 1 1
+./chip-tool colorcontrol read accepted-command-list 1 1
+./chip-tool colorcontrol read generated-command-list 1 1
+# [TC-CC-2.1] Attributes with server as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol read remaining-time 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol read drift-compensation 1 1
+./chip-tool colorcontrol read compensation-text 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol read color-mode 1 1
+./chip-tool colorcontrol read color-control-options 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-color-mode 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read color-capabilities 1 1
+./chip-tool colorcontrol read color-temp-physical-min 1 1
+./chip-tool colorcontrol read color-temp-physical-max 1 1
+./chip-tool colorcontrol read couple-color-temp-to-level-min-mireds 1 1
+./chip-tool colorcontrol read start-up-color-temperature-mireds 1 1
+./chip-tool colorcontrol read number-of-primaries 1 1
+./chip-tool colorcontrol read  primary1x 1 1
+./chip-tool colorcontrol read  primary1y 1 1
+./chip-tool colorcontrol read primary1intensity 1 1
+./chip-tool colorcontrol read primary2x 1 1
+./chip-tool colorcontrol read primary2y 1 1
+./chip-tool colorcontrol read primary2intensity 1 1
+./chip-tool colorcontrol read primary3x 1 1
+./chip-tool colorcontrol read primary3y 1 1
+./chip-tool colorcontrol read primary3intensity 1 1
+./chip-tool colorcontrol read primary4x 1 1
+./chip-tool colorcontrol read primary4y 1 1
+./chip-tool colorcontrol read primary4intensity 1 1
+./chip-tool colorcontrol read primary5x 1 1
+./chip-tool colorcontrol read primary5y 1 1
+./chip-tool colorcontrol read primary5intensity 1 1
+./chip-tool colorcontrol read primary6x 1 1
+./chip-tool colorcontrol read primary6y 1 1
+./chip-tool colorcontrol read primary6intensity 1 1
+./chip-tool colorcontrol read white-point-x 1 1
+./chip-tool colorcontrol read white-point-y 1 1
+./chip-tool colorcontrol read color-point-rx 1 1
+./chip-tool colorcontrol read color-point-ry 1 1
+./chip-tool colorcontrol read color-point-rintensity 1 1
+./chip-tool colorcontrol read color-point-gx 1 1
+./chip-tool colorcontrol read color-point-gy 1 1
+./chip-tool colorcontrol read color-point-gintensity 1 1
+./chip-tool colorcontrol read color-point-bx 1 1
+./chip-tool colorcontrol read color-point-by 1 1
+./chip-tool colorcontrol read color-point-bintensity 1 1
+# [TC-CC-2.2]  Attributes with client as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol read remaining-time 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol read drift-compensation 1 1
+./chip-tool colorcontrol read compensation-text 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol read color-mode 1 1
+./chip-tool colorcontrol read color-control-options 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-color-mode 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read color-capabilities 1 1
+./chip-tool colorcontrol read color-temp-physical-min 1 1
+./chip-tool colorcontrol read color-temp-physical-max 1 1
+./chip-tool colorcontrol read couple-color-temp-to-level-min-mireds 1 1
+./chip-tool colorcontrol read start-up-color-temperature-mireds 1 1
+./chip-tool colorcontrol read number-of-primaries 1 1
+./chip-tool colorcontrol read  primary1x 1 1
+./chip-tool colorcontrol read  primary1y 1 1
+./chip-tool colorcontrol read primary1intensity 1 1
+./chip-tool colorcontrol read primary2x 1 1
+./chip-tool colorcontrol read primary2y 1 1
+./chip-tool colorcontrol read primary2intensity 1 1
+./chip-tool colorcontrol read primary3x 1 1
+./chip-tool colorcontrol read primary3y 1 1
+./chip-tool colorcontrol read primary3intensity 1 1
+./chip-tool colorcontrol read primary4x 1 1
+./chip-tool colorcontrol read primary4y 1 1
+./chip-tool colorcontrol read primary4intensity 1 1
+./chip-tool colorcontrol read primary5x 1 1
+./chip-tool colorcontrol read primary5y 1 1
+./chip-tool colorcontrol read primary5intensity 1 1
+./chip-tool colorcontrol read primary6x 1 1
+./chip-tool colorcontrol read primary6y 1 1
+./chip-tool colorcontrol read primary6intensity 1 1
+./chip-tool colorcontrol read white-point-x 1 1
+./chip-tool colorcontrol read white-point-y 1 1
+./chip-tool colorcontrol read color-point-rx 1 1
+./chip-tool colorcontrol read color-point-ry 1 1
+./chip-tool colorcontrol read color-point-rintensity 1 1
+./chip-tool colorcontrol read color-point-gx 1 1
+./chip-tool colorcontrol read color-point-gy 1 1
+./chip-tool colorcontrol read color-point-gintensity 1 1
+./chip-tool colorcontrol read color-point-bx 1 1
+./chip-tool colorcontrol read color-point-by 1 1
+./chip-tool colorcontrol read color-point-bintensity 1 1
+# [TC-CC-3.1] Hue MoveTo functionality with server as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-to-hue 1 0 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-to-hue 150 1 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-to-hue 160 2 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-to-hue 155 3 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+# [TC-CC-3.2] Hue Move functionality with server as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-hue 1 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-hue 0 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-hue 3 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-hue 0 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+# [TC-CC-3.3] Hue Step functionality with server as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol step-hue 1 10 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1  1
+./chip-tool colorcontrol step-hue 3 10 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1  1
+# [TC-CC-3.4] Hue functionality with client as DUT
+./chip-tool colorcontrol move-to-hue 1 0 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1  1
+./chip-tool colorcontrol move-hue 1 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1  1
+./chip-tool colorcontrol step-hue 1 10 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1  1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+# [TC-CC-4.1] Saturation MoveTo functionality with server as DUT
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-to-saturation 200 200 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+# [TC-CC-4.2] Saturation Move functionality with server as DUT
+./chip-tool colorcontrol read current-saturation 1 1 
+./chip-tool colorcontrol move-saturation 1 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1 
+./chip-tool colorcontrol move-saturation 3 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-saturation 1 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-saturation 0 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-saturation 3 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-saturation 0 1 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+# [TC-CC-4.3] Saturation Step functionality with server as DUT
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol step-saturation 1 10 200 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol step-saturation 3 10 200 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+# [TC-CC-4.4] MoveToHueAndSaturation functionality with server as DUT
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-to-hue-and-saturation 100 200 200 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+# [TC-CC-4.5] Saturation functionality with client as DUT
+./chip-tool colorcontrol move-to-saturation 200 300 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-saturation 1 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol step-saturation 1 10 200 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+# [TC-CC-5.1] Color MoveTo functionality with server as DUT
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol move-to-color 400 500 200 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+# [TC-CC-5.2] Color Move functionality with server as DUT
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol move-color 10 20 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+# [TC-CC-5.3] Color Step functionality with server as DUT
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol step-color 100 100 200 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+# [TC-CC-5.4] Color functionality with client as DUT
+./chip-tool colorcontrol move-to-color 400 500 300 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol move-color 10 20 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol step-color 100 100 200 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+# [TC-CC-6.1] Color Temperature MoveTo functionality with server as DUT
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-to-color-temperature 150 200 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+# [TC-CC-6.2] Color Temperature Move functionality with server as DUT
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-color-temperature 1 10 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-color-temperature 3 10 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-color-temperature 1 10 5 250 0 0 1 1
+./chip-tool colorcontrol move-color-temperature 0 10 1 255 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-color-temperature 3 10 5 250 0 0 1 1
+./chip-tool colorcontrol move-color-temperature 0 1 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+# [TC-CC-6.3] Color Temperature Step functionality with server as DUT
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol step-color-temperature 1 10 200 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol step-color-temperature 3 10 200 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+# [TC-CC-6.4] Color Temperature functionality with client as DUT
+./chip-tool colorcontrol move-to-color-temperature 150 300 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol move-color-temperature 1 10 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol step-color-temperature 1 10 200 5 250 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+# [TC-CC-7.1] Enhanced MoveToHue functionality with server as DUT
+./chip-tool colorcontrol enhanced-move-to-hue 4000 0 0 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 5000 0 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 3500 1 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 6000 2 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 1000 3 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-7.2] Enhanced MoveHue functionality with server as DUT
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-hue 1 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-hue 0 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-hue 3 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-hue 0 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-7.3] Enhanced Step functionality with server as DUT
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-step-hue 1 1000 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-step-hue 3 1000 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-7.4] MoveToEnhancedHueAndSaturation functionality with server as DUT
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue-and-saturation 2500 100 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-7.5] Enhanced Hue functionality with client as DUT
+./chip-tool colorcontrol enhanced-move-to-hue 1000 3 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-hue 0 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-step-hue 1 1000 200 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+# [TC-CC-8.1] StopMoveStep functionality with server as DUT
+./chip-tool colorcontrol move-hue 1 10 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol read current-hue 1 1
+./chip-tool colorcontrol move-saturation 1 10 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol read current-saturation 1 1
+./chip-tool colorcontrol move-color 10 10 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol read current-x 1 1
+./chip-tool colorcontrol read current-y 1 1
+./chip-tool colorcontrol move-color-temperature 1 10 0 254 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol read color-temperature 1 1
+./chip-tool colorcontrol enhanced-move-hue 1 100 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol stop-move-step 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-9.1] ColorLoopSet Validation
+./chip-tool onoff on 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 16384 0 0 0 0 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol color-loop-set 2 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol color-loop-set 4 0 0 30 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol color-loop-set 8 0 0 0 49152 0 0 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 1 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 2 0 1 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol color-loop-set 1 1 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 16384 0 0 0 0 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 2 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol color-loop-set 1 2 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 2 0 1 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol color-loop-set 1 2 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-9.2] ColorLoopSet Validation - change direction without stop
+./chip-tool onoff on 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 16384 0 0 0 0 1 1
+./chip-tool colorcontrol color-loop-set 15 0 0 30 49152 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 1 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 2 0 1 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-9.3] ColorLoopSet Validation - change time without stop
+./chip-tool onoff on 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 16384 0 0 0 0 1 1
+./chip-tool colorcontrol color-loop-set 15 0 0 30 49152 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 1 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1  1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 4 0 0 60 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+# [TC-CC-9.4] ColorLoopSet Validation with client as DUT
+./chip-tool onoff on 1 1
+./chip-tool colorcontrol enhanced-move-to-hue 16384 0 0 0 0 1 1
+./chip-tool colorcontrol color-loop-set 15 0 0 30 160 0 0 1 1 
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-direction 1 1
+./chip-tool colorcontrol read color-loop-time 1 1
+./chip-tool colorcontrol read color-loop-start-enhanced-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 1 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read color-loop-stored-enhanced-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
+./chip-tool colorcontrol color-loop-set 1 0 0 0 0 0 0 1 1
+./chip-tool colorcontrol read color-loop-active 1 1
+./chip-tool colorcontrol read enhanced-current-hue 1 1
