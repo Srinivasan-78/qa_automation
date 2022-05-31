@@ -1,3 +1,4 @@
+# Mode Select Cluster
 # [TC-MOD-1.1] Global attributes with server as DUT
 ./chip-tool modeselect read cluster-revision 1 1
 ./chip-tool modeselect read feature-map  1 1
