@@ -1,0 +1,83 @@
+#LevelControl
+# [TC-LVL-1.1] Global attributes with server as DUT
+./chip-tool levelcontrol read cluster-revision 1 1
+./chip-tool levelcontrol read feature-map 1 1
+./chip-tool levelcontrol read attribute-list 1 1
+./chip-tool levelcontrol read  accepted-command-list  1 1
+./chip-tool levelcontrol read generated-command-list  1 1
+# [TC-LVL-2.1] Read cluster attributes (DUT as Server)
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol read remaining-time 1 1
+./chip-tool levelcontrol read min-level 1 1
+./chip-tool levelcontrol read max-level 1 1
+./chip-tool levelcontrol read current-frequency 1 1
+./chip-tool levelcontrol read min-frequency 1 1
+./chip-tool levelcontrol read max-frequency 1 1
+./chip-tool levelcontrol read on-off-transition-time 1 1
+./chip-tool levelcontrol read on-level 1 1
+./chip-tool levelcontrol read on-transition-time 1 1
+./chip-tool levelcontrol read off-transition-time 1 1
+./chip-tool levelcontrol read default-move-rate 1 1
+./chip-tool levelcontrol read options 1 1
+./chip-tool levelcontrol read start-up-current-level 1 1
+# [TC-LVL-2.2] Write cluster attributes (DUT as Server)		
+./chip-tool levelcontrol read on-off-transition-time 1 1
+./chip-tool levelcontrol write on-off-transition-time 5 1 1
+./chip-tool levelcontrol read on-off-transition-time 1 1
+./chip-tool levelcontrol read on-level 1 1
+./chip-tool levelcontrol write on-level 5 1 1
+./chip-tool levelcontrol read on-level 1 1
+./chip-tool levelcontrol read on-transition-time 1 1
+./chip-tool levelcontrol write on-transition-time 5 1 1
+./chip-tool levelcontrol read on-transition-time 1 1
+./chip-tool levelcontrol read off-transition-time 1 1
+./chip-tool levelcontrol write off-transition-time 5 1 1
+./chip-tool levelcontrol read off-transition-time 1 1
+./chip-tool levelcontrol read default-move-rate 1 1
+./chip-tool levelcontrol write default-move-rate 5 1 1
+./chip-tool levelcontrol read default-move-rate 1 1
+./chip-tool levelcontrol read start-up-current-level 1 1
+./chip-tool levelcontrol write start-up-current-level 5 1 1
+./chip-tool levelcontrol read start-up-current-level 1 1	
+# [TC-LVL-3.1] MoveToLevel Verification (DUT as Server)
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol read min-level 1 1
+./chip-tool levelcontrol read max-level 1 1
+./chip-tool levelcontrol move-to-level-with-on-off 26 0 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol move-to-level 100 65535 1 1  1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol move-to-level 200 100 1 1 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol read on-off-transition-time 1 1
+./chip-tool levelcontrol move-to-level 100 65535 1 1 1 1
+./chip-tool levelcontrol read current-level 1 1
+# [TC-LVL-4.1] Move Verification (DUT as Server)
+./chip-tool levelcontrol read min-level 1 1
+./chip-tool levelcontrol move-to-level-with-on-off 1 0 1 1
+./chip-tool levelcontrol read max-level 1 1
+./chip-tool levelcontrol move 0 32 1 1 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol read min-level 1 1
+./chip-tool levelcontrol move 1 64 1 1 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol read default-move-rate 1 1
+./chip-tool levelcontrol move 0 255 1 1 1 1
+# [TC-LVL-5.1] Step Verification (DUT as Server)
+./chip-tool levelcontrol read min-level 1 1
+./chip-tool levelcontrol  move-to-level-with-on-off 1 0 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol  step  0 64 20 1 1 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol  step-with-on-off 1 64 20 1 1
+./chip-tool levelcontrol read current-level 1 1
+# [TC-LVL-6.1] Stop Verification (DUT as Server)
+./chip-tool levelcontrol read min-level 1 
+./chip-tool levelcontrol  move-to-level-with-on-off  1 0 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol move 0 5 1 1 1 1
+./chip-tool levelcontrol stop  1  1 1 1
+./chip-tool levelcontrol read current-level 1 1
+./chip-tool levelcontrol move 0 5 1 1 1 1
+./chip-tool levelcontrol stop-with-on-off 1 1
+./chip-tool levelcontrol read current-level 1 1
