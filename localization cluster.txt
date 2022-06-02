@@ -1,0 +1,14 @@
+#localization
+# [TC-LO-1.1]Global Attributes [DUT-Server]
+./chip-tool localizationconfiguration read cluster-revision 1 0
+./chip-tool localizationconfiguration read feature-map 1 0
+./chip-tool localizationconfiguration read  attribute-list 1 0
+./chip-tool localizationconfiguration read accepted-command-list 1 0
+./chip-tool localizationconfiguration read  generated-command-list 1 0
+# [TC-LO-2.1] Localization Configuration Cluster Attributes
+./chip-tool localizationconfiguration read supported-locales 1 0
+./chip-tool localizationconfiguration read supported-locales 1 0
+./chip-tool localizationconfiguration read active-locale 1 0
+./chip-tool localizationconfiguration write active-locale fw-GB 1 0
+./chip-tool localizationconfiguration write active-locale fr-FR 1 0
+./chip-tool localizationconfiguration read active-locale 1 0
