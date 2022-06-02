@@ -1,0 +1,40 @@
+#Power Source Cluster
+# [TC-PS-1.1] Global attributes with server as DUT	
+./chip-tool powersource read cluster-revision 1 1
+./chip-tool powersource read feature-map 1 1
+./chip-tool powersource read attribute-list 1 1
+./chip-tool powersource read accepted-command-list  1 1
+./chip-tool powersource read  generated-command-list 1 1
+# [TC-PS-2.1] Global attributes with server as DUT				
+./chip-tool powersource read status 1 1
+./chip-tool powersource read order 1 1
+./chip-tool powersource read description 1 1
+./chip-tool powersource read wired-assessed-input-voltage 1 1
+./chip-tool powersource read wired-assessed-input-frequency 1 1
+./chip-tool powersource read wired-current-type 1 1
+./chip-tool powersource read wired-assessed-current 1 1
+./chip-tool powersource read wired-nominal-voltage 1 1
+./chip-tool powersource read wired-maximum-current 1 1
+./chip-tool powersource read wired-present 1 1
+./chip-tool powersource read active-wired-faults 1 1
+./chip-tool powersource read battery-voltage 1 1
+./chip-tool powersource read battery-percent-remaining 1 1
+./chip-tool powersource read battery-time-remaining 1 1
+./chip-tool powersource read battery-charge-level 1 1
+./chip-tool powersource read battery-replacement-needed 1 1
+./chip-tool powersource read battery-replaceability 1 1
+./chip-tool powersource read battery-present 1 1
+./chip-tool powersource read active-battery-faults 1 1
+./chip-tool powersource read battery-replacement-description 1 1
+./chip-tool powersource read battery-common-designation 1 1
+./chip-tool powersource read battery-ansidesignation 1 1
+./chip-tool powersource read battery-iecdesignation 1 1
+./chip-tool powersource read battery-approved-chemistry 1 1
+./chip-tool powersource read battery-capacity 1 1
+./chip-tool powersource read battery-quantity 1 1
+./chip-tool powersource read battery-charge-state 1 1
+./chip-tool powersource read battery-time-to-full-charge 1 1
+./chip-tool powersource read battery-functional-while-charging 1 1
+./chip-tool powersource read battery-charging-current 1 1
+./chip-tool powersource read active-battery-charge-faults 1 1	
+# [TC-PS-2.2] Event reporting with server as DUT				
