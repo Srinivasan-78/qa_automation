@@ -1,4 +1,4 @@
-#pump configuration
+# Pump configuration
 # [TC-PCC-1.1] Global attributes with server as DUT
 ./chip-tool pumpconfigurationandcontrol read cluster-revision 1 1
 ./chip-tool pumpconfigurationandcontrol read feature-map 1 1
