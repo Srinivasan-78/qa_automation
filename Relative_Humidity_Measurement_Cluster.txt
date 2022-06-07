@@ -1,4 +1,4 @@
-#Relative Humidity Measurement Cluster
+# Relative Humidity Measurement Cluster
 # [TC-RH-1.1] Global attributes with server as DUT
 ./chip-tool relativehumiditymeasurement read cluster-revision 1 1
 ./chip-tool relativehumiditymeasurement read feature-map 1 1
