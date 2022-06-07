@@ -1,4 +1,4 @@
-#Fixedlabel
+# Fixed label
 # [TC-FLABEL-1.1] Global Attributes [DUT-server]
 ./chip-tool fixedlabel read cluster-revision 1 0
 ./chip-tool fixedlabel read feature-map 1 0
