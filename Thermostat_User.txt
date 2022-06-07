@@ -1,4 +1,4 @@
-#Thermostat user
+# Thermostat user
 # [TC-TSUIC-1.1] Global attributes with server as DUT
 ./chip-tool thermostatuserinterfaceconfiguration read cluster-revision 1 1
 ./chip-tool thermostatuserinterfaceconfiguration read feature-map 1 1
