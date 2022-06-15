@@ -1,10 +1,11 @@
-# Unit localization
+$ Unit localization
 # [TC-UL-1.2|]Global Attributes [DUT as Server]
 ./chip-tool unitlocalization read  cluster-revision 1 0
 ./chip-tool unitlocalization read  feature-map 1 0
 ./chip-tool unitlocalization read attribute-list 1 0
 ./chip-tool unitlocalization read accepted-command-list 1 0
 ./chip-tool unitlocalization read generated-command-list 1 0
+End
 # [TC-UL-2.2]Read and Write Unit Localization Cluster Attributes [DUT as Server]
 ./chip-tool unitlocalization read temperature-unit 1 0
 ./chip-tool unitlocalization write temperature-unit 0 1 0
@@ -13,3 +14,4 @@
 ./chip-tool unitlocalization read temperature-unit 1 0
 ./chip-tool unitlocalization write temperature-unit 2 1 0
 ./chip-tool unitlocalization read temperature-unit 1 0
+End
