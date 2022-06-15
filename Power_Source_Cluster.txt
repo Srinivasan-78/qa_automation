@@ -1,10 +1,11 @@
-# Power Source Cluster
+$ Power Source Cluster
 # [TC-PS-1.1] Global attributes with server as DUT	
 ./chip-tool powersource read cluster-revision 1 1
 ./chip-tool powersource read feature-map 1 1
 ./chip-tool powersource read attribute-list 1 1
 ./chip-tool powersource read accepted-command-list  1 1
 ./chip-tool powersource read  generated-command-list 1 1
+End
 # [TC-PS-2.1] Global attributes with server as DUT				
 ./chip-tool powersource read status 1 1
 ./chip-tool powersource read order 1 1
@@ -37,4 +38,4 @@
 ./chip-tool powersource read battery-functional-while-charging 1 1
 ./chip-tool powersource read battery-charging-current 1 1
 ./chip-tool powersource read active-battery-charge-faults 1 1	
-# [TC-PS-2.2] Event reporting with server as DUT				
+End
