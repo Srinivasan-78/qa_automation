@@ -55,6 +55,7 @@ End
 ./chip-tool thermostat read ac-louver-position 1 1
 ./chip-tool thermostat read ac-coil-temperature 1 1
 ./chip-tool thermostat read ac-capacity-format 1 1
+End
 # [TC-TSTAT-2.2] Setpoint Test Cases with server as DUT							
 ./chip-tool thermostat read min-cool-setpoint-limit 1 1
 ./chip-tool thermostat read max-cool-setpoint-limit 1 1
