@@ -1,10 +1,11 @@
-# thermostat
+$ Thermostat
 # [TC-TSTAT-1.1] Global attributes with server as DUT	
 ./chip-tool thermostat read cluster-revision 1 1
 ./chip-tool thermostat read feature-map 1 1
 ./chip-tool thermostat read attribute-list 1 1
 ./chip-tool thermostat read accepted-command-list  1 1
 ./chip-tool thermostat read generated-command-list 1 1
+End
 # [TC-TSTAT-2.1] Attributes with server as DUT	
 ./chip-tool thermostat read local-temperature 1 1
 ./chip-tool thermostat read outdoor-temperature 1 1
@@ -114,3 +115,4 @@
 ./chip-tool thermostat read  occupied-cooling-setpoint 1 1
 ./chip-tool thermostat setpoint-raise-lower 0 30 1 1
 ./chip-tool thermostat write occupied-cooling-setpoint 1000 1 1
+End
