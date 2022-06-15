@@ -1,10 +1,11 @@
-# Time Format localization
+$ Time Format localization
 # [TC-TFL-1.2|]Global Attributes [DUT as Server]
 ./chip-tool timeformatlocalization read  cluster-revision 1 0
 ./chip-tool timeformatlocalization read feature-map 1 0
 ./chip-tool timeformatlocalization read attribute-list 1 0
 ./chip-tool timeformatlocalization read accepted-command-list 1 0
 ./chip-tool timeformatlocalization read generated-command-list 1 0
+End
 # [TC-TFL-2.2]Read and Write Time Format Localization Cluster Attributes [DUT as Server]
 ./chip-tool timeformatlocalization read hour-format 1 0
 ./chip-tool timeformatlocalization write hour-format 0 1 0
@@ -37,3 +38,4 @@
 ./chip-tool timeformatlocalization read active-calendar-type 1 0
 ./chip-tool timeformatlocalization write active-calendar-type 11 1 0
 ./chip-tool timeformatlocalization read active-calendar-type 1 0
+End
