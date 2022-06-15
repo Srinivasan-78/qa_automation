@@ -1,10 +1,11 @@
-# Mode Select Cluster
+$ Mode Select Cluster
 # [TC-MOD-1.1] Global attributes with server as DUT
 ./chip-tool modeselect read cluster-revision 1 1
 ./chip-tool modeselect read feature-map  1 1
 ./chip-tool modeselect read attribute-list 1 1
 ./chip-tool modeselect read generated-command-list 1 1
 ./chip-tool modeselect read accepted-command-list 1 1
+End
 # [TC-MOD-1.2] Cluster attributes with server as DUT
 ./chip-tool modeselect read supported-modes 1 1
 ./chip-tool modeselect read current-mode 1 1
@@ -12,14 +13,13 @@
 ./chip-tool modeselect read start-up-mode 1 1
 ./chip-tool modeselect read description 1 1
 ./chip-tool modeselect read standard-namespace 1 1
+End
 # [TC-MOD-2.1] ChangeToMode Verification (DUT as Server)
 ./chip-tool modeselect read supported-modes 1 1
 ./chip-tool modeselect change-to-mode 4 1 1
 ./chip-tool modeselect read current-mode 1 1
 ./chip-tool modeselect change-to-mode 2 1 1
-# [TC-MOD-2.2] ChangeToMode Verification (DUT as Client)
-./chip-tool modeselect read supported-modes 1 1
-./chip-tool modeselect change-to-mode 4 1 1
+End
 # [TC-MOD-3.1] OnMode Verification (DUT as Server)
 ./chip-tool modeselect read on-mode 1 1
 ./chip-tool modeselect read current-mode 1 1
@@ -28,19 +28,21 @@
 ./chip-tool onoff off 1 1
 ./chip-tool onoff on 1 1
 ./chip-tool modeselect read current-mode 1 1
-./chip-tool modeselect read current-mode 1 1
+End
 # [TC-MOD-3.2] StartUpMode Verification (DUT as Server)
 ./chip-tool modeselect read start-up-mode 1 1
 ./chip-tool modeselect read current-mode 1 1
 ./chip-tool modeselect read supported-modes 1 1
 ./chip-tool modeselect change-to-mode 4 1 1
 ./chip-tool modeselect read current-mode 1 1
+End
 # [TC-MOD-3.3] OTA Mode Verification (DUT as Server)
 ./chip-tool modeselect read start-up-mode 1 1
 ./chip-tool modeselect read current-mode 1 1
 ./chip-tool modeselect read supported-modes 1 1
 ./chip-tool modeselect change-to-mode 4 1 1
 ./chip-tool modeselect read current-mode 1 1
+End
 # [TC-MOD-3.4] OnMode Overwriting StartUpMode (DUT as Server)
 ./chip-tool modeselect read start-up-mode 1 1
 ./chip-tool modeselect read on-mode 1 1
@@ -49,5 +51,4 @@
 ./chip-tool modeselect read on-mode 1 1
 ./chip-tool onoff write start-up-on-off 1 1 1
 ./chip-tool modeselect read current-mode 1 1
-
-
+End
