@@ -1,10 +1,11 @@
-# General Diagnostics Cluster
+$ General Diagnostics Cluster
 # [TC-DGGEN-1.1] Global attributes with server as DUT				
 ./chip-tool generaldiagnostics read  cluster-revision 1 0
 ./chip-tool generaldiagnostics read feature-map 1 0
 ./chip-tool generaldiagnostics read attribute-list 1 0
 ./chip-tool generaldiagnostics read accepted-command-list 1 0 
 ./chip-tool generaldiagnostics read generated-command-list 1 0
+End
 # [TC-DGGEN-2.1] Non global attributes with server as DUT	
 ./chip-tool generaldiagnostics read network-interfaces 1 0
 ./chip-tool generaldiagnostics read reboot-count 1 0
@@ -15,6 +16,7 @@
 ./chip-tool generaldiagnostics read active-radio-faults 1 0./chip-tool generaldiagnostics subscribe active-radio-faults 100 1000 1 0
 ./chip-tool generaldiagnostics read active-network-faults 1 0 
 ./chip-tool generaldiagnostics subscribe active-network-faults 100 1000 1 0 
+End
 # [TC-DGGEN-2.2] Event functionality test with server as DUT	
 ./chip-tool generaldiagnostics read-event hardware-fault-change 1 0
 ./chip-tool generaldiagnostics subscribe-event hardware-fault-change 100 1000 1 0
@@ -23,3 +25,4 @@
 ./chip-tool generaldiagnostics read-event network-fault-change 1 0
 ./chip-tool generaldiagnostics subscribe-event network-fault-change 100 1000 1 0
 ./chip-tool generaldiagnostics read-event boot-reason 1 0
+End
