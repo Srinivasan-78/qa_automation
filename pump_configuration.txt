@@ -1,10 +1,11 @@
-# Pump configuration
+$ Pump configuration
 # [TC-PCC-1.1] Global attributes with server as DUT
 ./chip-tool pumpconfigurationandcontrol read cluster-revision 1 1
 ./chip-tool pumpconfigurationandcontrol read feature-map 1 1
 ./chip-tool pumpconfigurationandcontrol read attribute-list 1 1
 ./chip-tool pumpconfigurationandcontrol read accepted-command-list 1 1 
 ./chip-tool pumpconfigurationandcontrol read generated-command-list 1 1
+End
 # [TC-PCC-2.1] Attributes with server as DUT
 ./chip-tool pumpconfigurationandcontrol read max-pressure 1 1
 ./chip-tool pumpconfigurationandcontrol read max-speed 1 1
@@ -29,6 +30,7 @@
 ./chip-tool pumpconfigurationandcontrol read lifetime-energy-consumed 1 1
 ./chip-tool pumpconfigurationandcontrol read operation-mode 1 1
 ./chip-tool pumpconfigurationandcontrol read control-mode 1 1
+End
 # [TC-PCC-2.2] Primary functionality with server as DUT
 ./chip-tool pumpconfigurationandcontrol write operation-mode 1 1 1
 ./chip-tool pumpconfigurationandcontrol read effective-operation-mode 1 1
@@ -36,6 +38,7 @@
 ./chip-tool pumpconfigurationandcontrol read effective-operation-mode 1 1
 ./chip-tool pumpconfigurationandcontrol write operation-mode 3 1 1
 ./chip-tool pumpconfigurationandcontrol read effective-operation-mode 1 1
+End
 # [TC-PCC-2.3] Primary functionality with server as DUT
 ./chip-tool pumpconfigurationandcontrol write operation-mode 0 1 1
 ./chip-tool pumpconfigurationandcontrol read effective-operation-mode 1 1
@@ -51,6 +54,7 @@
 ./chip-tool pumpconfigurationandcontrol read effective-control-mode 1 1
 ./chip-tool pumpconfigurationandcontrol write control-mode 7 1 1
 ./chip-tool pumpconfigurationandcontrol read effective-control-mode 1 1
+End
 # [TC-PCC-2.4] Primary functionality with server as DUT
 ./chip-tool pumpconfigurationandcontrol write lifetime-running-hours 1 1 1
 ./chip-tool pumpconfigurationandcontrol read lifetime-running-hours 1 1
@@ -64,3 +68,4 @@
 ./chip-tool pumpconfigurationandcontrol read lifetime-energy-consumed 1 1
 ./chip-tool pumpconfigurationandcontrol write lifetime-energy-consumed 3 1 1
 ./chip-tool pumpconfigurationandcontrol read lifetime-energy-consumed 1 1
+End
