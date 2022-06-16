@@ -51,7 +51,7 @@ def filter_commands(commands):
             newcommand.append(command)
     size = len(newcommand)
     idx_list = [idx + 1 for idx, val in
-                enumerate(newcommand) if val == "end"]
+                enumerate(newcommand) if val == "End"]
     res = [newcommand[i: j] for i, j in
            zip([0] + idx_list, idx_list +
                ([size] if idx_list[-1] != size else []))]
